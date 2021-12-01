@@ -41,13 +41,16 @@ words, the bigger the project, the more useful the tool is.
 If `duplicate-code-detection-tool` is the name where the tool resides in and
 `smartcar_shield/src` contains the repository you want to check for source code
 similarities between the files, then you can run the following to get the
-similarity report:
+similarity report with an included log file that shows which lines and what is duplicated:
 
 `python3 -W ignore duplicate-code-detection-tool/duplicate_code_detection.py -d smartcar_shield/src/`
 
 The result should look something like this:
 
 ![code duplication tool screenshot](https://i.imgur.com/wi1TnVM.png)
+
+The log file should look something like this:
+![log file screen shot](https://i.imgur.com/hASNtgM.png)
 
 ## GitHub Action
 
