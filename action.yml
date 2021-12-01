@@ -18,7 +18,7 @@ inputs:
   file_extensions:
     description: 'A comma-separated list of source code file extensions to check for similarities'
     required: false
-    default: 'h, hpp, c, cpp, cc, java, py, cs'
+    default: 'h, hpp, c, cpp, cc, java, py, cs, gd'
   ignore_below:
     description: 'The minimum similarity percentage to be reported'
     required: false
