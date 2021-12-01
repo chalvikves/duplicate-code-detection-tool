@@ -50,6 +50,7 @@ The result should look something like this:
 ![code duplication tool screenshot](https://i.imgur.com/wi1TnVM.png)
 
 The log file should look something like this:
+
 ![log file screen shot](https://i.imgur.com/hASNtgM.png)
 
 ## GitHub Action
