@@ -199,11 +199,6 @@ def run(fail_threshold, directories, files, ignore_directories, ignore_files,
             conditional_print("%s       " % (short_source_path.ljust(largest_string_length)) +
                               color + "%.2f" % (similarity_percentage) + CliColors.ENDC, json_output)
             if similarity_percentage > 20:
-                # In i lcs(source_code[baseFilen], source_code[jämför], basefilen, jämför)
-                # Base filen
-                # shourt_source_file_path / source_file
-                # Filen vi jämför med
-                #short_source_path / source
                 lcs(source_code[short_source_file_path], source_code[short_source_path], short_source_file_path, short_source_path, iterations, threshold)
             
             
