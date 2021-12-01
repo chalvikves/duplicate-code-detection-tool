@@ -4,7 +4,7 @@ similarities between files within a repository.
 
 ## What?
 A command line tool that receives a directory or a list of files and determines
-the degree of similarity between them.
+the degree of similarity between them. Furthermore it creates a log file where lines and what code is duplicated is outputted.
 
 ## Why?
 The tool intends guide the refactoring efforts of a developer who wishes
