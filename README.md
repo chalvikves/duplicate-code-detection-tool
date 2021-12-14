@@ -18,7 +18,7 @@ Its development was initiated within the context of the
 The tool uses the [gensim](https://radimrehurek.com/gensim/) Python library to
 determine the similarity between source code files, supplied by the user.
 The default supported languages are C, C++, JAVA, Python and C#.
-The tool has also been updated to support GDScript.
+The tool has also been updated to support GDScript with a couple of new arguments which can be read using `--help`.
 
 ### Dependencies
 The following Python packages have to be installed:
