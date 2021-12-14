@@ -164,6 +164,7 @@ def run(fail_threshold, directories, files, ignore_directories, ignore_files,
 
     # Logging codeduplication
     logging.basicConfig(filename="codeDuplication.txt", format='%(message)s', filemode= "w")
+    pr = false
 
     for source_file in source_code:
         # Check for similarities
@@ -202,6 +203,7 @@ def run(fail_threshold, directories, files, ignore_directories, ignore_files,
                               color + "%.2f" % (similarity_percentage) + CliColors.ENDC, json_output)
             if similarity_percentage > percentage:
                 lcs(source_code[short_source_file_path], source_code[short_source_path], short_source_file_path, short_source_path, iterations, threshold)
+                pr = true
             
             
         
@@ -212,8 +214,9 @@ def run(fail_threshold, directories, files, ignore_directories, ignore_files,
     if json_output:
         similarities_json = json.dumps(code_similarity, indent=4)
         print(similarities_json)
-
-    conditional_print("\n\nDetailed information about the duplicated lines are outputted into codeDuplication.txt", json_output)
+    
+    if pr:
+        conditional_print("\n\nDetailed information about the duplicated lines are outputted into codeDuplication.txt", json_output)
     return (exit_code, code_similarity)
 
 def lcs(S,T, fileName1, fileName2, iterations, threshold):
