@@ -95,7 +95,7 @@ def main():
 
 
 def run(fail_threshold, directories, files, ignore_directories, ignore_files,
-        json_output, iterations, threshold, percetage, project_root_dir, file_extensions, ignore_threshold):
+        json_output, iterations, threshold, percentage, project_root_dir, file_extensions, ignore_threshold):
     # Determine which files to compare for similarities
     source_code_files = list()
     files_to_ignore = list()
